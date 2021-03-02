@@ -40,4 +40,8 @@ public class DaftarMenu {
         getMenuByKategori("Toping");
         getMenuByKategori("Minuman");
     }
-}
+
+    public void tampilDaftraMenu() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+} 
