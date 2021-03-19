@@ -10,15 +10,27 @@ import classes.Kuah;
 import classes.Minuman;
 import classes.Ramen;
 import classes.Toping;
+import java.util.Scanner;
 
 /**
  *
  * @author A409FJ
  */
 public class MainAplikasiKasir {
+    //Tambahkan
+    public static double PAJAK_PPN = 0.10;
+    public static double Biaya_SERVICE = 0.05;
+    //End Of Tambahkan 
     
     public static void main(String[] args) { }
-    
+        //init
+        Scanner input = new Scanner(System.in);
+        //Tambahkan
+        String no_transaksi, nama_pesanan, tanggal, no_meja = "";
+        String transaksi_lagi = "", pesan_lagi = "", keterangan="", makaan_ditempat;
+        int jumlah_pesanan, no_menu;
+        //end of tambahkan
+        
     public void generateDaftarMenu() { 
         daftarMenu = new DaftarMenu();
         daftarMenu.tambahMenu(new Ramen("Ramen Seafood", 25000));
