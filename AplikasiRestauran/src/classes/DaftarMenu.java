@@ -55,6 +55,8 @@ public class DaftarMenu {
             System.out.print("Nomor Menu yang dipersan: ");
             int no_menu = input.nextInt();
             
+            Menu m = daftarMenu.get(no_menu-1);
+            
             //get menu berdasarkan no_menu, di -1 karena arraylist muali dari 0
             if(!m.getKategori().equalsIgnoreCase("Kuah")){
                 return m;
